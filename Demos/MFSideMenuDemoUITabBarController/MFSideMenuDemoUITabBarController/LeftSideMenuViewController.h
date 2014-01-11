@@ -6,6 +6,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SideMenuViewController : UITableViewController
+@interface LeftSideMenuViewController : UITableViewController
 
 @end

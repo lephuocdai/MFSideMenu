@@ -4,17 +4,20 @@
 //
 //  Created by Michael Frederick on 3/19/12.
 
-#import "SideMenuViewController.h"
-#import "MFSideMenu.h"
-#import "DemoViewController.h"
+#import "LeftSideMenuViewController.h"
 
-@implementation SideMenuViewController
+
+@interface LeftSideMenuViewController ()
+
+@end
+
+@implementation LeftSideMenuViewController
 
 #pragma mark -
 #pragma mark - UITableViewDataSource
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return [NSString stringWithFormat:@"Section %d", section];
+    return [NSString stringWithFormat:@"Left %d", section];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -31,9 +34,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"Item %d", indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"Left item %d", indexPath.row];
     
     return cell;
 }
@@ -42,12 +46,11 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    DemoViewController *demoController = [[DemoViewController alloc] initWithNibName:@"DemoViewController" bundle:nil];
-    demoController.title = [NSString stringWithFormat:@"Demo #%d-%d", indexPath.section, indexPath.row];
+    DemoViewController *demoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DemoViewController"];
+    demoViewController.title = [NSString stringWithFormat:@"Left demo #%d-%d", indexPath.section, indexPath.row];
     
-    UITabBarController *tabBarController = self.menuContainerViewController.centerViewController;
-    UINavigationController *navigationController = (UINavigationController *)tabBarController.selectedViewController;
-    NSArray *controllers = [NSArray arrayWithObject:demoController];
+    UINavigationController *navigationController = self.menuContainerViewController.centerViewController;
+    NSArray *controllers = [NSArray arrayWithObject:demoViewController];
     navigationController.viewControllers = controllers;
     [self.menuContainerViewController setMenuState:MFSideMenuStateClosed];
 }

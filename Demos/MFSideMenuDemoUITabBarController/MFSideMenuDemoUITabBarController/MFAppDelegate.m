@@ -9,7 +9,8 @@
 #import "MFAppDelegate.h"
 #import "MFSideMenuContainerViewController.h"
 #import "DemoViewController.h"
-#import "SideMenuViewController.h"
+#import "LeftSideMenuViewController.h"
+#import "RightSideMenuViewController.h"
 
 @implementation MFAppDelegate
 
@@ -32,8 +33,8 @@
     [tabBarController setViewControllers:[NSArray arrayWithObjects:[self navigationController],
                                           [self navigationController], nil]];
     
-    SideMenuViewController *leftSideMenuController = [[SideMenuViewController alloc] init];
-    SideMenuViewController *rightSideMenuController = [[SideMenuViewController alloc] init];
+    LeftSideMenuViewController *leftSideMenuController = [[LeftSideMenuViewController alloc] init];
+    RightSideMenuViewController *rightSideMenuController = [[RightSideMenuViewController alloc] init];
     MFSideMenuContainerViewController *container = [MFSideMenuContainerViewController
                                                     containerWithCenterViewController:tabBarController
                                                     leftMenuViewController:leftSideMenuController

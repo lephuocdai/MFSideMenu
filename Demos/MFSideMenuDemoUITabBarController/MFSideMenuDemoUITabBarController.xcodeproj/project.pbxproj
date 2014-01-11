@@ -15,7 +15,7 @@
 		273D114C16F8841300C187E0 /* MFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 273D114B16F8841300C187E0 /* MFAppDelegate.m */; };
 		273D116A16F884F900C187E0 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273D116616F884F900C187E0 /* DemoViewController.m */; };
 		273D116B16F884F900C187E0 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 273D116716F884F900C187E0 /* DemoViewController.xib */; };
-		273D116C16F884F900C187E0 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273D116916F884F900C187E0 /* SideMenuViewController.m */; };
+		273D116C16F884F900C187E0 /* LeftSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 273D116916F884F900C187E0 /* LeftSideMenuViewController.m */; };
 		273D117316F8859B00C187E0 /* back-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 273D116E16F8859B00C187E0 /* back-arrow.png */; };
 		273D117416F8859B00C187E0 /* back-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 273D116F16F8859B00C187E0 /* back-arrow@2x.png */; };
 		273D117516F8859B00C187E0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 273D117016F8859B00C187E0 /* Default-568h@2x.png */; };
@@ -24,6 +24,7 @@
 		274419D617BBAF990007ADE7 /* MFSideMenuShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 274419D517BBAF990007ADE7 /* MFSideMenuShadow.m */; };
 		276985BC1733D69200536685 /* MFSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276985BB1733D69200536685 /* MFSideMenuContainerViewController.m */; };
 		D081F051178E6AD3004A89D0 /* UIViewController+MFSideMenuAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D081F050178E6AD3004A89D0 /* UIViewController+MFSideMenuAdditions.m */; };
+		F0759AB01881A4F60077D387 /* RightSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0759AAF1881A4F60077D387 /* RightSideMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +41,8 @@
 		273D116516F884F900C187E0 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		273D116616F884F900C187E0 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		273D116716F884F900C187E0 /* DemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
-		273D116816F884F900C187E0 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
-		273D116916F884F900C187E0 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		273D116816F884F900C187E0 /* LeftSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSideMenuViewController.h; sourceTree = "<group>"; };
+		273D116916F884F900C187E0 /* LeftSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSideMenuViewController.m; sourceTree = "<group>"; };
 		273D116E16F8859B00C187E0 /* back-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow.png"; sourceTree = "<group>"; };
 		273D116F16F8859B00C187E0 /* back-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@2x.png"; sourceTree = "<group>"; };
 		273D117016F8859B00C187E0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -54,6 +55,8 @@
 		D081F04E178E6AD3004A89D0 /* MFSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSideMenu.h; sourceTree = "<group>"; };
 		D081F04F178E6AD3004A89D0 /* UIViewController+MFSideMenuAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MFSideMenuAdditions.h"; sourceTree = "<group>"; };
 		D081F050178E6AD3004A89D0 /* UIViewController+MFSideMenuAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MFSideMenuAdditions.m"; sourceTree = "<group>"; };
+		F0759AAE1881A4F60077D387 /* RightSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightSideMenuViewController.h; sourceTree = "<group>"; };
+		F0759AAF1881A4F60077D387 /* RightSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightSideMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +109,10 @@
 				273D116516F884F900C187E0 /* DemoViewController.h */,
 				273D116616F884F900C187E0 /* DemoViewController.m */,
 				273D116716F884F900C187E0 /* DemoViewController.xib */,
-				273D116816F884F900C187E0 /* SideMenuViewController.h */,
-				273D116916F884F900C187E0 /* SideMenuViewController.m */,
+				273D116816F884F900C187E0 /* LeftSideMenuViewController.h */,
+				273D116916F884F900C187E0 /* LeftSideMenuViewController.m */,
+				F0759AAE1881A4F60077D387 /* RightSideMenuViewController.h */,
+				F0759AAF1881A4F60077D387 /* RightSideMenuViewController.m */,
 				273D116D16F8859B00C187E0 /* Images */,
 				273D114216F8841300C187E0 /* Supporting Files */,
 			);
@@ -225,9 +230,10 @@
 				273D114C16F8841300C187E0 /* MFAppDelegate.m in Sources */,
 				274419D617BBAF990007ADE7 /* MFSideMenuShadow.m in Sources */,
 				273D116A16F884F900C187E0 /* DemoViewController.m in Sources */,
-				273D116C16F884F900C187E0 /* SideMenuViewController.m in Sources */,
+				273D116C16F884F900C187E0 /* LeftSideMenuViewController.m in Sources */,
 				276985BC1733D69200536685 /* MFSideMenuContainerViewController.m in Sources */,
 				D081F051178E6AD3004A89D0 /* UIViewController+MFSideMenuAdditions.m in Sources */,
+				F0759AB01881A4F60077D387 /* RightSideMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

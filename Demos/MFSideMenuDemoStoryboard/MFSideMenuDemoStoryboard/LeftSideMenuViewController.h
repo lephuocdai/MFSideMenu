@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MFSideMenu.h"
+#import "DemoViewController.h"
 
-@interface SideMenuViewController : UITableViewController
+@interface LeftSideMenuViewController : UITableViewController
 
 @end
